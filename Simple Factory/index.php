@@ -1,41 +1,41 @@
 <?php
 
-// Simple Factory
+/*
+ * nome: Simple Factory
+ * resumo: gera uma instância da classe sem expor qualquer lógica de instanciação
+ * qual o tipo: Design Pattern de Criação
+ * quando usar: Quando for criar algum objeto que precise efetuar alguns processos antes de ser instanciado.
+ * exemplo: Imagina que em seu sistema, o objeto pagamento sempre efetua uma lógica ao ser instanciado.
+ * se você ficar reescrevendo a lógica toda vez que for fazer um tipo de pagamento novo, além
+ * de trabalhoso não seria nada elegante. Então, por que não ter uma fábrica pra isso?
+ * Com a fábrica, ela já retorna a instancia de payment com os processos efetuados.
+ */
 
-//  Situação real
-// Imagine que você seja uma produtora e precise fazer mais artistas. Porém, o processo é um pouco burocratico, é necessário assinar, e envias contratos.
-// Então você tem a ideia de contratar uma fábrica de artistas que já assina e envia o contrato.
-
-class Artist {
-    private $name;
+class Payment {
+    private $value;
     private $type;
 
-    public function __construct($name, $type)
+    public function __construct($value, $type)
     {
-        $this->name = $name;
+        $this->value = $value;
         $this->type = $type;
     }
-}
 
-class ArtistFactory {
-    public function makeArtist($name, $type) {
-        $this->signContract();
-        $this->sendContract();
-
-        return new Artist($name, $type);
-    }
-
-    private function signContract()
-    {
-        return true;
-    }
-
-    private function sendContract()
+    public function doPayment()
     {
         return true;
     }
 }
 
-$artistFactory = new ArtistFactory();
-$eminem = $artistFactory->makeArtist('Eminem', 'Rap');
-$edsheeran = $artistFactory->makeArtist('Ed Sheeran', 'Pop');
+class PaymentFactory {
+    public static function makePayment($value, $type)
+    {
+        return new Payment($value, $type);
+    }
+}
+
+$mcdonalds = PaymentFactory::makePayment(20, 'McDonalds');
+$burguerking = PaymentFactory::makePayment(35, 'BK');
+
+$mcdonalds->doPayment();
+$burguerking->doPayment();

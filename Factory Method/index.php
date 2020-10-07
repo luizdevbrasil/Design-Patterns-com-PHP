@@ -1,100 +1,62 @@
 <?php
 
-// Factory Method
+/*
+ * @nome Abstract Factory
+ * @resumo: Um conceito que permite o filho delegar a lógica de instanciação
+ * @quando usar: Quando há um processamento gênerico em uma classe.
+ */
 
-// Situação - Imagina que você tem uma plataforma de streaming que inicialmente só irá aceitar dois tipos de músicas, rock e pop.
-// Porém muito em breve, será necessário ter mais playlists, então não é melhor já prever a implementação?
-
-// Com a factory method, você já cria uma estrutura de classes que prevê o que vem pela frente.
-
-interface ISong {
-    public function playSong();
-    public function stopSong();
+interface IGatewayPayment {
+    public function sendPayment();
 }
 
-class Rock implements ISong {
+class PagSeguro implements IGatewayPayment {
 
-    public function playSong()
+    public function sendPayment()
     {
-        echo 'Open your eyes. Look up to the skies and see';
-    }
-
-    public function stopSong()
-    {
-        echo 'Stop!!';
+        return 'Pagamento (PagSeguro) enviado com sucesso!';
     }
 }
 
-class Pop implements ISong {
+class PayPal implements IGatewayPayment {
 
-    public function playSong()
+    public function sendPayment()
     {
-        echo 'Darling, just dive right in and follow my lead';
-    }
-
-    public function stopSong()
-    {
-        echo 'Stop!!';
+        return 'Pagamento (PayPal) enviado com sucesso!';
     }
 }
 
-abstract class Playlist {
-    public abstract function makeSong() : ISong;
+abstract class Gateway {
+    public abstract function makeGateway() : IGatewayPayment;
 
-    public function playPlaylist()
+    public function processPayment()
     {
-        $song = $this->makeSong();
-        $song->playSong();
-
-        sleep(3000);
-        $song->stopSong();
+        $song = $this->makeGateway();
+        $song->sendPayment();
     }
 }
 
-class PopPlaylist extends Playlist {
+class PagSeguroGateway extends Gateway {
 
-    public function makeSong(): ISong
+    public function makeGateway(): IGatewayPayment
     {
-        return new Pop();
+        return new PagSeguro();
     }
 }
 
-class RockPlaylist extends Playlist {
+class PayPalGateway extends Gateway {
 
-    public function makeSong(): ISong
+    public function makeGateway(): IGatewayPayment
     {
-        return new Rock();
+        return new PayPal();
     }
 }
 
-$popPlaylist = new PopPlaylist();
-$rockPlaylist = new RockPlaylist();
-
-$popPlaylist->playPlaylist();
-$rockPlaylist->playPlaylist();
-
-// Alguns anos depois um programador precisou implementar uma playlist nova.
-
-class Pagode implements ISong {
-
-    public function playSong()
-    {
-        echo 'Tá vendo aquela lua que brilha lá no céu';
-    }
-
-    public function stopSong()
-    {
-        echo 'Stop!!';
-    }
+if (true == 'PayPal') {
+    $paypal = new PayPalGateway();
+    $paypal->processPayment();
+} else if (true == 'PagSeguro') {
+    $pagSeguro = new PagSeguroGateway();
+    $pagSeguro->processPayment();
 }
 
-class PagodePlaylist extends Playlist {
-
-    public function makeSong(): ISong
-    {
-        return new Pagode();
-    }
-}
-
-$pagodePlaylist = new PagodePlaylist();
-$pagodePlaylist->playPlaylist();
