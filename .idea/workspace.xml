@@ -20,17 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a36a55e-fb8c-40a2-906a-f5220686e689" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Simple Factory/Factories/HeroFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Simple Factory/Models/Hero.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Simple Factory/Models/Local.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Simple Factory/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builder/Builders/HeroBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builder/Models/Hero.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builder/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Builder/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simple Factory/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Simple Factory/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Factory Method/index.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="ComposerSettings">
     <execution />
@@ -66,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Builder/Models" />
       <recent name="$PROJECT_DIR$/Simple Factory" />
       <recent name="$PROJECT_DIR$/Simple Factory/Bad/Models" />
       <recent name="$PROJECT_DIR$/Simple Factory/Bad" />
@@ -85,8 +91,16 @@
       <updated>1602081915925</updated>
       <workItem from="1602081916986" duration="12175000" />
       <workItem from="1602095577459" duration="4638000" />
-      <workItem from="1603379704894" duration="1643000" />
+      <workItem from="1603379704894" duration="3660000" />
     </task>
+    <task id="LOCAL-00001" summary="- Nova estrutura utilizando super herois para o design pattern Simple Factory">
+      <created>1603381504888</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603381504888</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,29 +117,34 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Nova estrutura utilizando super herois para o design pattern Simple Factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Nova estrutura utilizando super herois para o design pattern Simple Factory" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1288" y="244" width="429" height="706" key="#com.intellij.ide.util.MemberChooser" timestamp="1602099629240">
-      <screen x="0" y="27" width="2560" height="1053" />
-    </state>
-    <state x="1288" y="244" width="429" height="706" key="#com.intellij.ide.util.MemberChooser/0.27.2560.1053@0.27.2560.1053" timestamp="1602099629240" />
-    <state x="741" y="292" width="304" height="359" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603381313136">
+    <state x="725" y="185" width="407" height="604" key="#com.intellij.ide.util.MemberChooser" timestamp="1603382400801">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="741" y="292" width="304" height="359" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1603381313136" />
+    <state x="725" y="185" width="407" height="604" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1603382400801" />
+    <state x="1288" y="244" width="429" height="706" key="#com.intellij.ide.util.MemberChooser/0.27.2560.1053@0.27.2560.1053" timestamp="1602099629240" />
+    <state x="741" y="292" width="304" height="359" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603382441061">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="741" y="292" width="304" height="359" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1603382441061" />
     <state x="1318" y="369" width="351" height="420" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.2560.1053@0.27.2560.1053" timestamp="1602087034167" />
     <state x="1063" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1602095564737">
       <screen x="0" y="27" width="2560" height="1053" />
     </state>
     <state x="1063" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.2560.1053@0.27.2560.1053" timestamp="1602095564737" />
-    <state x="705" y="158" width="735" height="533" key="NewPhpClassDialog" timestamp="1603380967907">
+    <state x="705" y="158" width="735" height="533" key="NewPhpClassDialog" timestamp="1603385894845">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="705" y="158" width="735" height="533" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1603380967907" />
+    <state x="705" y="158" width="735" height="533" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1603385894845" />
     <state x="1558" y="212" width="679" height="614" key="NewPhpClassDialog/0.27.2560.1053@0.27.2560.1053" timestamp="1602088532374" />
-    <state x="951" y="344" width="225" height="147" key="NewPhpFileDialog" timestamp="1603381085245">
+    <state x="951" y="344" width="225" height="147" key="NewPhpFileDialog" timestamp="1603385899446">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="951" y="344" width="225" height="147" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1603381085245" />
+    <state x="951" y="344" width="225" height="147" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1603385899446" />
     <state x="1690" y="430" width="399" height="164" key="NewPhpFileDialog/0.27.2560.1053@0.27.2560.1053" timestamp="1602088579312" />
     <state x="1384" y="143" width="1022" height="737" key="SettingsEditor" timestamp="1602083654601">
       <screen x="0" y="27" width="2560" height="1053" />
