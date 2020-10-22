@@ -3,10 +3,10 @@
 
 class HeroBuilder
 {
-    private $name;
-    private $eletric;
-    private $water;
-    private $age;
+    public $name;
+    public $eletric;
+    public $water;
+    public $age;
 
     public function addName(string $name) : HeroBuilder
     {

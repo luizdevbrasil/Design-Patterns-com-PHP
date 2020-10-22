@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a36a55e-fb8c-40a2-906a-f5220686e689" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Builder/Builders/HeroBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Builder/Models/Hero.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Builder/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Builder/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Factory Method/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Builder/Builders/HeroBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Builder/Builders/HeroBuilder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <updated>1602081915925</updated>
       <workItem from="1602081916986" duration="12175000" />
       <workItem from="1602095577459" duration="4638000" />
-      <workItem from="1603379704894" duration="3660000" />
+      <workItem from="1603379704894" duration="3915000" />
     </task>
     <task id="LOCAL-00001" summary="- Nova estrutura utilizando super herois para o design pattern Simple Factory">
       <created>1603381504888</created>
@@ -100,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603381504888</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Novo design pattern Builder">
+      <created>1603386060921</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603386060921</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +122,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Nova estrutura utilizando super herois para o design pattern Simple Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Nova estrutura utilizando super herois para o design pattern Simple Factory" />
+    <MESSAGE value="- Novo design pattern Builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Novo design pattern Builder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="725" y="185" width="407" height="604" key="#com.intellij.ide.util.MemberChooser" timestamp="1603382400801">
